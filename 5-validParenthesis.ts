@@ -17,19 +17,15 @@ function isValid(s: string): boolean {
 
             if (s[i] == ')') {
                 if (pistack[lastIndex] == '(') {
-                    pistack.pop();
-
-                    console.log(pistack);
                     console.log("stack (1)");
+                    pistack.pop();
                 } else {
                     return false;
                 }
             }
 
             if (s[i] == '}') {
-                console.log('stack33 }');
                 if (pistack[lastIndex] === '{') {
-                    console.log(pistack);
                     console.log('stack {2}');
                     pistack.pop();
                 } else {
@@ -39,7 +35,6 @@ function isValid(s: string): boolean {
 
             if (s[i] == ']') {
                 if (pistack[lastIndex] === '[') {
-                    console.log(pistack);
                     console.log("stack [3]");
                     pistack.pop();
                 } else {
