@@ -1,6 +1,16 @@
 /node_modules
 package.json
 package-lock.json
+
+# dependencies
+/node_modules
+/node
+
+# testing
+.pytest_cache
+.vscode
+
+
 # Compiled class file
 *.class
 
