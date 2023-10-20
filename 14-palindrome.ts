@@ -1,3 +1,4 @@
+// Palindrome Number
 function isPalindrome(x: number): boolean {
     let result = x;
     let modToo;
